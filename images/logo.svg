@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <g fill="#fff">
+    <!-- Left page -->
+    <path d="M57 20 L8 38 L8 92 L57 76 Z"/>
+    <!-- Right page -->
+    <path d="M63 20 L112 38 L112 92 L63 76 Z"/>
+    <!-- Binding strip at top -->
+    <rect x="53" y="16" width="14" height="9" rx="3"/>
+    <!-- Binding strip at bottom -->
+    <rect x="53" y="73" width="14" height="6" rx="2"/>
+  </g>
+</svg>

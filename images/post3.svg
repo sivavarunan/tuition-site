@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="600" fill="#0F172A"/>
+  <g stroke="#FAF6EE" opacity="0.05" stroke-width="1">
+    <path d="M0 100 H800 M0 200 H800 M0 300 H800 M0 400 H800 M0 500 H800"/>
+  </g>
+  <!-- big brackets -->
+  <g font-family="Menlo, Consolas, monospace" font-weight="700">
+    <text x="120" y="380" font-size="280" fill="#0F766E">{</text>
+    <text x="600" y="380" font-size="280" fill="#0F766E">}</text>
+  </g>
+  <!-- UML boxes inside -->
+  <g transform="translate(280 200)">
+    <rect width="100" height="64" rx="6" fill="#FAF6EE" stroke="#F59E0B" stroke-width="3"/>
+    <text x="50" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#0F172A" font-weight="700">Animal</text>
+  </g>
+  <g transform="translate(420 200)">
+    <rect width="100" height="64" rx="6" fill="#FAF6EE" stroke="#F59E0B" stroke-width="3"/>
+    <text x="50" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#0F172A" font-weight="700">Dog</text>
+  </g>
+  <line x1="380" y1="232" x2="420" y2="232" stroke="#F59E0B" stroke-width="3"/>
+  <g transform="translate(280 320)">
+    <rect width="240" height="64" rx="6" fill="#0F766E"/>
+    <text x="120" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#FAF6EE" font-weight="700">extends Animal</text>
+  </g>
+  <line x1="400" y1="284" x2="400" y2="320" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 4"/>
+  <!-- arrow tip -->
+  <polygon points="394,320 400,310 406,320" fill="#F59E0B"/>
+</svg>
