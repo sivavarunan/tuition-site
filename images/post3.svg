@@ -3,26 +3,37 @@
   <g stroke="#FAF6EE" opacity="0.05" stroke-width="1">
     <path d="M0 100 H800 M0 200 H800 M0 300 H800 M0 400 H800 M0 500 H800"/>
   </g>
-  <!-- big brackets -->
-  <g font-family="Menlo, Consolas, monospace" font-weight="700">
-    <text x="120" y="380" font-size="280" fill="#0F766E">{</text>
-    <text x="600" y="380" font-size="280" fill="#0F766E">}</text>
+  <!-- big curly braces -->
+  <g fill="none" stroke="#0F766E" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180 130 Q120 130 120 200 L120 280 Q120 300 90 300 Q120 300 120 320 L120 400 Q120 470 180 470"/>
+    <path d="M620 130 Q680 130 680 200 L680 280 Q680 300 710 300 Q680 300 680 320 L680 400 Q680 470 620 470"/>
   </g>
-  <!-- UML boxes inside -->
-  <g transform="translate(280 200)">
-    <rect width="100" height="64" rx="6" fill="#FAF6EE" stroke="#F59E0B" stroke-width="3"/>
-    <text x="50" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#0F172A" font-weight="700">Animal</text>
+  <!-- UML class boxes (no text) -->
+  <g>
+    <g transform="translate(280 180)">
+      <rect width="120" height="80" rx="6" fill="#FAF6EE" stroke="#F59E0B" stroke-width="3"/>
+      <rect x="0" y="0" width="120" height="22" rx="6" fill="#F59E0B"/>
+      <rect x="10" y="34" width="80" height="6" rx="2" fill="#0F172A" opacity="0.6"/>
+      <rect x="10" y="48" width="60" height="6" rx="2" fill="#0F172A" opacity="0.4"/>
+      <rect x="10" y="62" width="90" height="6" rx="2" fill="#0F172A" opacity="0.4"/>
+    </g>
+    <g transform="translate(420 180)">
+      <rect width="120" height="80" rx="6" fill="#FAF6EE" stroke="#F59E0B" stroke-width="3"/>
+      <rect x="0" y="0" width="120" height="22" rx="6" fill="#F59E0B"/>
+      <rect x="10" y="34" width="60" height="6" rx="2" fill="#0F172A" opacity="0.6"/>
+      <rect x="10" y="48" width="80" height="6" rx="2" fill="#0F172A" opacity="0.4"/>
+      <rect x="10" y="62" width="50" height="6" rx="2" fill="#0F172A" opacity="0.4"/>
+    </g>
   </g>
-  <g transform="translate(420 200)">
-    <rect width="100" height="64" rx="6" fill="#FAF6EE" stroke="#F59E0B" stroke-width="3"/>
-    <text x="50" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#0F172A" font-weight="700">Dog</text>
+  <!-- sibling connector -->
+  <line x1="400" y1="220" x2="420" y2="220" stroke="#F59E0B" stroke-width="3"/>
+  <!-- child class -->
+  <g transform="translate(340 340)">
+    <rect width="120" height="60" rx="6" fill="#0F766E" stroke="#FAF6EE" stroke-width="3"/>
+    <rect x="15" y="22" width="90" height="6" rx="2" fill="#FAF6EE" opacity="0.85"/>
+    <rect x="15" y="36" width="60" height="6" rx="2" fill="#FAF6EE" opacity="0.6"/>
   </g>
-  <line x1="380" y1="232" x2="420" y2="232" stroke="#F59E0B" stroke-width="3"/>
-  <g transform="translate(280 320)">
-    <rect width="240" height="64" rx="6" fill="#0F766E"/>
-    <text x="120" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#FAF6EE" font-weight="700">extends Animal</text>
-  </g>
-  <line x1="400" y1="284" x2="400" y2="320" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 4"/>
-  <!-- arrow tip -->
-  <polygon points="394,320 400,310 406,320" fill="#F59E0B"/>
+  <!-- inheritance arrow (dashed) -->
+  <line x1="400" y1="262" x2="400" y2="332" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 5"/>
+  <polygon points="392,332 408,332 400,318" fill="none" stroke="#F59E0B" stroke-width="3"/>
 </svg>

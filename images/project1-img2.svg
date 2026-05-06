@@ -2,12 +2,8 @@
   <rect width="1200" height="600" fill="#FDF7EA"/>
   <!-- graph paper -->
   <g stroke="#0F766E" stroke-width="1" opacity="0.18">
-    <g>
-      <!-- vertical lines every 30px -->
-      <path d="M 30 0 L 30 600 M 60 0 L 60 600 M 90 0 L 90 600 M 120 0 L 120 600 M 150 0 L 150 600 M 180 0 L 180 600 M 210 0 L 210 600 M 240 0 L 240 600 M 270 0 L 270 600 M 300 0 L 300 600 M 330 0 L 330 600 M 360 0 L 360 600 M 390 0 L 390 600 M 420 0 L 420 600 M 450 0 L 450 600 M 480 0 L 480 600 M 510 0 L 510 600 M 540 0 L 540 600 M 570 0 L 570 600 M 600 0 L 600 600 M 630 0 L 630 600 M 660 0 L 660 600 M 690 0 L 690 600 M 720 0 L 720 600 M 750 0 L 750 600 M 780 0 L 780 600 M 810 0 L 810 600 M 840 0 L 840 600 M 870 0 L 870 600 M 900 0 L 900 600 M 930 0 L 930 600 M 960 0 L 960 600 M 990 0 L 990 600 M 1020 0 L 1020 600 M 1050 0 L 1050 600 M 1080 0 L 1080 600 M 1110 0 L 1110 600 M 1140 0 L 1140 600 M 1170 0 L 1170 600"/>
-      <!-- horizontal lines every 30px -->
-      <path d="M 0 30 L 1200 30 M 0 60 L 1200 60 M 0 90 L 1200 90 M 0 120 L 1200 120 M 0 150 L 1200 150 M 0 180 L 1200 180 M 0 210 L 1200 210 M 0 240 L 1200 240 M 0 270 L 1200 270 M 0 300 L 1200 300 M 0 330 L 1200 330 M 0 360 L 1200 360 M 0 390 L 1200 390 M 0 420 L 1200 420 M 0 450 L 1200 450 M 0 480 L 1200 480 M 0 510 L 1200 510 M 0 540 L 1200 540 M 0 570 L 1200 570"/>
-    </g>
+    <path d="M 30 0 L 30 600 M 60 0 L 60 600 M 90 0 L 90 600 M 120 0 L 120 600 M 150 0 L 150 600 M 180 0 L 180 600 M 210 0 L 210 600 M 240 0 L 240 600 M 270 0 L 270 600 M 300 0 L 300 600 M 330 0 L 330 600 M 360 0 L 360 600 M 390 0 L 390 600 M 420 0 L 420 600 M 450 0 L 450 600 M 480 0 L 480 600 M 510 0 L 510 600 M 540 0 L 540 600 M 570 0 L 570 600 M 600 0 L 600 600 M 630 0 L 630 600 M 660 0 L 660 600 M 690 0 L 690 600 M 720 0 L 720 600 M 750 0 L 750 600 M 780 0 L 780 600 M 810 0 L 810 600 M 840 0 L 840 600 M 870 0 L 870 600 M 900 0 L 900 600 M 930 0 L 930 600 M 960 0 L 960 600 M 990 0 L 990 600 M 1020 0 L 1020 600 M 1050 0 L 1050 600 M 1080 0 L 1080 600 M 1110 0 L 1110 600 M 1140 0 L 1140 600 M 1170 0 L 1170 600"/>
+    <path d="M 0 30 L 1200 30 M 0 60 L 1200 60 M 0 90 L 1200 90 M 0 120 L 1200 120 M 0 150 L 1200 150 M 0 180 L 1200 180 M 0 210 L 1200 210 M 0 240 L 1200 240 M 0 270 L 1200 270 M 0 300 L 1200 300 M 0 330 L 1200 330 M 0 360 L 1200 360 M 0 390 L 1200 390 M 0 420 L 1200 420 M 0 450 L 1200 450 M 0 480 L 1200 480 M 0 510 L 1200 510 M 0 540 L 1200 540 M 0 570 L 1200 570"/>
   </g>
   <!-- axes -->
   <g stroke="#0F172A" stroke-width="3">
@@ -17,16 +13,20 @@
   <!-- arrows -->
   <polygon points="1080,492 1100,500 1080,508" fill="#0F172A"/>
   <polygon points="192,80 200,60 208,80" fill="#0F172A"/>
-  <!-- parabola points -->
+  <!-- parabola -->
   <path d="M 240 480 Q 540 80 960 480" fill="none" stroke="#0F766E" stroke-width="6"/>
   <!-- line -->
   <line x1="240" y1="500" x2="960" y2="180" stroke="#F59E0B" stroke-width="6"/>
   <!-- intersection points -->
-  <circle cx="380" cy="392" r="10" fill="#F59E0B" stroke="#0F172A" stroke-width="3"/>
-  <circle cx="780" cy="225" r="10" fill="#F59E0B" stroke="#0F172A" stroke-width="3"/>
-  <!-- labels -->
-  <text x="980" y="170" font-family="Georgia, serif" font-size="26" fill="#F59E0B" font-weight="700">y = mx + c</text>
-  <text x="540" y="280" font-family="Georgia, serif" font-size="26" fill="#0F766E" font-weight="700">y = x² − 4</text>
-  <text x="1020" y="525" font-family="Georgia, serif" font-size="22" fill="#0F172A">x</text>
-  <text x="178" y="74" font-family="Georgia, serif" font-size="22" fill="#0F172A">y</text>
+  <circle cx="380" cy="392" r="12" fill="#F59E0B" stroke="#0F172A" stroke-width="3"/>
+  <circle cx="780" cy="225" r="12" fill="#F59E0B" stroke="#0F172A" stroke-width="3"/>
+  <!-- dashed projections from intersection points down/right to axes -->
+  <g stroke="#0F172A" stroke-width="2" stroke-dasharray="4 4" opacity="0.55">
+    <line x1="380" y1="392" x2="380" y2="500"/>
+    <line x1="380" y1="392" x2="200" y2="392"/>
+    <line x1="780" y1="225" x2="780" y2="500"/>
+    <line x1="780" y1="225" x2="200" y2="225"/>
+  </g>
+  <!-- origin marker -->
+  <circle cx="200" cy="500" r="6" fill="#0F172A"/>
 </svg>

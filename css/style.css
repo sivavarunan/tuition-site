@@ -2420,6 +2420,55 @@ h1, h2, h3, h4, h5, h6 { color: #D6EAF7; }
 .project-info .lg-text { color: #E0EEF8; }
 .clients-section .lg-text { color: #E0EEF8; }
 
+/* ========== Mobile fixes ========== */
+/* Long strings (emails, urls) must not overflow */
+.few-contact .contact-info-holder .contact-info,
+.few-contact .contact-info-holder .contact-info a,
+.footer .contact-info-holder .contact-info,
+.footer .contact-info-holder .contact-info a,
+.normal-text p,
+.text-box p { overflow-wrap: anywhere; word-break: break-word; }
+
+@media (max-width: 768px) {
+    /* Lalezar line-height needs >= font-size or wrapped lines collapse */
+    .lg-text { line-height: 3rem; }
+    .lg-text span { line-height: 3rem; }
+    .extra-lg-text { line-height: 4rem; }
+    .extra-lg-text span { line-height: 4rem; }
+    .slg-text { line-height: 2.6rem; }
+
+    .post-box .text-holder .title,
+    .post-section .post-header .text-holder .title { line-height: 3rem; }
+}
+
+@media (max-width: 575px) {
+    .header { padding: 9rem 1.5rem 6rem; }
+
+    .lg-text { font-size: 2.2rem; line-height: 2.5rem; }
+    .lg-text span { line-height: 2.5rem; }
+    .extra-lg-text { font-size: 2.6rem; line-height: 2.9rem; }
+    .extra-lg-text span { line-height: 2.9rem; }
+
+    .footer .contact-info-holder .contact-info,
+    .footer .contact-info-holder .contact-info a,
+    .few-contact .contact-info-holder .contact-info,
+    .few-contact .contact-info-holder .contact-info a { font-size: 1.6rem; line-height: 2rem; }
+
+    .boxy { padding: 4rem 2rem; }
+    .boxy h1.title { font-size: 2.4rem; line-height: 2.7rem; }
+    .boxy .text { font-size: 1rem; line-height: 1.7rem; }
+    .boxy.img-box { min-height: 380px; padding: 3rem; }
+
+    .post-box .text-holder .title,
+    .post-section .post-header .text-holder .title { font-size: 2.4rem; line-height: 2.7rem; }
+
+    .footer { padding: 4rem 2rem; }
+    .footer .lg-text { font-size: 1.9rem; line-height: 2.2rem; }
+
+    /* drop hard <br> manual line-breaks visual collisions */
+    .normal-text br { display: none; }
+}
+
 /* ========== Section bg differentiation ========== */
 /* Dark teal tint — how my classes work, project detail */
 .process-section,
@@ -2436,4 +2485,3 @@ h1, h2, h3, h4, h5, h6 { color: #D6EAF7; }
 /* Slightly raised card bg for post-section text panels */
 .post-section .post-header .text-holder,
 .post-section .post-content { background-color: #1A2D44; }
-}
