@@ -1,43 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" preserveAspectRatio="xMidYMid slice">
-  <rect width="800" height="800" fill="#F59E0B"/>
-  <!-- table -->
-  <ellipse cx="400" cy="490" rx="240" ry="60" fill="#FAF6EE" stroke="#0F172A" stroke-width="6"/>
-  <!-- open book on table -->
-  <g transform="translate(400 480)">
-    <path d="M-70 0 L-2 -16 L-2 14 L-70 30 Z" fill="#FAF6EE" stroke="#0F172A" stroke-width="4"/>
-    <path d="M70 0 L2 -16 L2 14 L70 30 Z" fill="#FAF6EE" stroke="#0F172A" stroke-width="4"/>
-    <line x1="-58" y1="6" x2="-12" y2="-4" stroke="#0F172A" stroke-width="2"/>
-    <line x1="-58" y1="14" x2="-12" y2="4" stroke="#0F172A" stroke-width="2"/>
-    <line x1="58" y1="6" x2="12" y2="-4" stroke="#0F172A" stroke-width="2"/>
-    <line x1="58" y1="14" x2="12" y2="4" stroke="#0F172A" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" preserveAspectRatio="xMidYMid slice">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0F172A"/>
+  <!-- Floor -->
+  <rect x="0" y="490" width="800" height="110" fill="#0C1F33"/>
+
+  <!-- Whiteboard -->
+  <rect x="40" y="55" width="340" height="250" rx="10" fill="#FAF6EE"/>
+  <!-- Top accent bar -->
+  <rect x="40" y="55" width="340" height="22" rx="10" fill="#0F766E"/>
+  <!-- Board content: abstract lines -->
+  <rect x="80" y="108" width="200" height="11" rx="4" fill="#0F172A" opacity="0.6"/>
+  <rect x="80" y="132" width="155" height="11" rx="4" fill="#0F172A" opacity="0.5"/>
+  <rect x="80" y="158" width="115" height="16" rx="4" fill="#F59E0B" opacity="0.85"/>
+  <rect x="80" y="190" width="190" height="11" rx="4" fill="#0F172A" opacity="0.55"/>
+  <rect x="80" y="215" width="130" height="11" rx="4" fill="#0F766E" opacity="0.7"/>
+  <rect x="80" y="240" width="175" height="11" rx="4" fill="#0F172A" opacity="0.45"/>
+  <!-- Chalk tray -->
+  <rect x="40" y="305" width="340" height="10" rx="3" fill="#7BAFC8" opacity="0.8"/>
+  <!-- Board legs -->
+  <line x1="115" y1="315" x2="85" y2="390" stroke="#7BAFC8" stroke-width="7" stroke-linecap="round"/>
+  <line x1="305" y1="315" x2="335" y2="390" stroke="#7BAFC8" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Teacher -->
+  <!-- head -->
+  <circle cx="445" cy="195" r="33" fill="#0F766E"/>
+  <!-- eyes -->
+  <circle cx="434" cy="190" r="5" fill="#FAF6EE"/>
+  <circle cx="456" cy="190" r="5" fill="#FAF6EE"/>
+  <!-- body -->
+  <path d="M413 232 Q445 254 477 232 L484 400 L406 400 Z" fill="#0F766E"/>
+  <!-- arm pointing at board -->
+  <line x1="418" y1="268" x2="348" y2="220" stroke="#0F766E" stroke-width="18" stroke-linecap="round"/>
+  <!-- pointer fingertip -->
+  <circle cx="348" cy="220" r="7" fill="#F59E0B"/>
+
+  <!-- Idea bubble from teacher -->
+  <ellipse cx="500" cy="150" rx="45" ry="29" fill="#FAF6EE" opacity="0.95"/>
+  <polygon points="474,174 462,198 487,181" fill="#FAF6EE" opacity="0.95"/>
+  <!-- lightbulb body -->
+  <circle cx="500" cy="143" r="13" fill="#F59E0B"/>
+  <rect x="493" y="155" width="14" height="7" rx="2" fill="#0F172A"/>
+  <line x1="500" y1="162" x2="500" y2="168" stroke="#0F172A" stroke-width="2.5"/>
+
+  <!-- Student 1 — top left -->
+  <g transform="translate(538 285)">
+    <!-- desk -->
+    <rect x="-52" y="32" width="104" height="13" rx="4" fill="#7BAFC8" opacity="0.65"/>
+    <!-- notebook on desk -->
+    <rect x="-32" y="21" width="64" height="13" rx="3" fill="#FAF6EE" opacity="0.75"/>
+    <!-- body -->
+    <path d="M-26 -8 Q0 8 26 -8 L32 34 L-32 34 Z" fill="#F59E0B"/>
+    <!-- head -->
+    <circle cx="0" cy="-36" r="27" fill="#F59E0B"/>
+    <!-- eyes -->
+    <circle cx="-9" cy="-38" r="3.5" fill="#0F172A" opacity="0.5"/>
+    <circle cx="9" cy="-38" r="3.5" fill="#0F172A" opacity="0.5"/>
   </g>
-  <!-- 4 student silhouettes -->
-  <g fill="#0F172A">
-    <!-- top-left -->
-    <circle cx="220" cy="280" r="42"/>
-    <path d="M150 410 Q220 330 290 410 L290 460 L150 460 Z"/>
-    <!-- top-right -->
-    <circle cx="580" cy="280" r="42"/>
-    <path d="M510 410 Q580 330 650 410 L650 460 L510 460 Z"/>
-    <!-- bottom-left -->
-    <circle cx="170" cy="610" r="42"/>
-    <path d="M100 740 Q170 660 240 740 L240 760 L100 760 Z"/>
-    <!-- bottom-right -->
-    <circle cx="630" cy="610" r="42"/>
-    <path d="M560 740 Q630 660 700 740 L700 760 L560 760 Z"/>
+
+  <!-- Student 2 — top right -->
+  <g transform="translate(668 285)">
+    <rect x="-52" y="32" width="104" height="13" rx="4" fill="#7BAFC8" opacity="0.65"/>
+    <rect x="-32" y="21" width="64" height="13" rx="3" fill="#FAF6EE" opacity="0.75"/>
+    <path d="M-26 -8 Q0 8 26 -8 L32 34 L-32 34 Z" fill="#F59E0B"/>
+    <circle cx="0" cy="-36" r="27" fill="#F59E0B"/>
+    <circle cx="-9" cy="-38" r="3.5" fill="#0F172A" opacity="0.5"/>
+    <circle cx="9" cy="-38" r="3.5" fill="#0F172A" opacity="0.5"/>
   </g>
-  <!-- empty speech bubbles with lightbulbs (idea moments) -->
-  <g>
-    <!-- top-left bubble -->
-    <ellipse cx="320" cy="200" rx="48" ry="32" fill="#FAF6EE" stroke="#0F172A" stroke-width="4"/>
-    <path d="M286 222 L274 246 L298 232 Z" fill="#FAF6EE" stroke="#0F172A" stroke-width="4"/>
-    <!-- lightbulb inside -->
-    <circle cx="320" cy="194" r="14" fill="#F59E0B"/>
-    <rect x="312" y="206" width="16" height="6" rx="2" fill="#0F172A"/>
-    <!-- top-right bubble -->
-    <ellipse cx="490" cy="200" rx="48" ry="32" fill="#FAF6EE" stroke="#0F172A" stroke-width="4"/>
-    <path d="M524 222 L536 246 L512 232 Z" fill="#FAF6EE" stroke="#0F172A" stroke-width="4"/>
-    <!-- check inside -->
-    <path d="M474 200 L484 212 L506 188" fill="none" stroke="#0F766E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Student 3 — bottom centre -->
+  <g transform="translate(603 410)">
+    <rect x="-52" y="32" width="104" height="13" rx="4" fill="#7BAFC8" opacity="0.65"/>
+    <rect x="-32" y="21" width="64" height="13" rx="3" fill="#FAF6EE" opacity="0.75"/>
+    <path d="M-26 -8 Q0 8 26 -8 L32 34 L-32 34 Z" fill="#F59E0B"/>
+    <circle cx="0" cy="-36" r="27" fill="#F59E0B"/>
+    <circle cx="-9" cy="-38" r="3.5" fill="#0F172A" opacity="0.5"/>
+    <circle cx="9" cy="-38" r="3.5" fill="#0F172A" opacity="0.5"/>
   </g>
+
+  <!-- Subtle accent dots -->
+  <circle cx="738" cy="78" r="5" fill="#F59E0B" opacity="0.35"/>
+  <circle cx="762" cy="118" r="3" fill="#0F766E" opacity="0.45"/>
+  <circle cx="718" cy="140" r="6" fill="#F59E0B" opacity="0.25"/>
+  <circle cx="70" cy="545" r="5" fill="#0F766E" opacity="0.4"/>
 </svg>
